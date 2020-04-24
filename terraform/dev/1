@@ -1,0 +1,4 @@
+resource "aws_key_pair" "aws_key" {
+  key_name   = "dev_node"
+  public_key = "${file("aws_key.pub")}"
+}
